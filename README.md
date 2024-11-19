@@ -6,7 +6,7 @@
 # Introduction
 
 This is the repository for the major web systems used by
-[Momentum Mod](https://momentum-mod.org).
+[Momentum Mod](https://momentum-mod.org/).
 
 Its central components are the web frontend and the HTTP backend. The frontend
 is a dashboard site that acts as a central hub for and an extension to the
@@ -22,20 +22,20 @@ and stats congregation/filtering.
 # Architecture
 
 The vast majority of the codebase is written in
-[Typescript](https://www.typescriptlang.org/).
+[TypeScript](https://www.typescriptlang.org/).
 
-The frontend runs on [Angular](https://angular.io). We use
+The frontend runs on [Angular](https://angular.dev/). We use
 [Tailwind](https://tailwindcss.com/) for most styling,
 [PrimeNG](https://primeng.org/) for some components.
 
 The backend runs on [NodeJS](https://nodejs.org/), with
 
 - [NestJS](https://nestjs.com/): handling architecture and routing,
-- [Fastify](https://www.fastify.io/): the underlying HTTP server,
+- [Fastify](https://fastify.dev/): the underlying HTTP server,
 - [Prisma](https://www.prisma.io/): an ORM,
 - [Postgres](https://www.postgresql.org/): the underlying database
 
-This repo is a monorepo, using [Nx](https://nx.dev) for organization and
+This repo is a monorepo, using [Nx](https://nx.dev/) for organization and
 tooling. Application code (such as frontend/backend) lives in respective
 directories in `apps/`, and anything shared between applications lives in
 `libs/`.
